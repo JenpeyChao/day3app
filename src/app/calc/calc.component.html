@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div style="text-align: center;">
+    <h1>{{title}}</h1>
+    <label class = "w3-input w3-border w3-padding-large ">{{result}}</label>
+    <label class = "w3-input w3-border">Total: {{total}}</label>
+    <button (click) = "clear()">c</button>
+    <button (disabled) = "isDisabled">&nbsp;&nbsp;</button>
+    <button (disabled) = "isDisabled"> &nbsp;&nbsp;</button>
+    <button (click) = "addOperation('/')">/</button>
+    <br>
+
+    <button (click) = "addNumber(7)">7</button>
+    <button (click) = "addNumber(8)">8</button>
+    <button (click) = "addNumber(9)">9</button>
+    <button (click) = "addOperation('*')">x</button>
+    <br>
+
+    <button (click) = "addNumber(4)">4</button>
+    <button (click) = "addNumber(5)">5</button>
+    <button (click) = "addNumber(6)">6</button>
+    <button (click) = "addOperation('-')">-</button>
+    <br>
+
+    <button (click) = "addNumber(1)">1</button>
+    <button (click) = "addNumber(2)">2</button>
+    <button (click) = "addNumber(3)">3</button>
+    <button (click) = "addOperation('+')">+</button>
+    <br>
+
+    <button (click) = "isDisabled">&nbsp;&nbsp;</button>
+    <button (disabled) = "isDisabled">&nbsp;&nbsp;</button>
+    <button (disabled) = "isDisabled"> &nbsp;&nbsp;</button>
+    <button (click) = "addNumber(0)">0</button>
+</div>
