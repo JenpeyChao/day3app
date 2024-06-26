@@ -19,21 +19,26 @@ export class CalcComponent {
       //removes the prev number 
       this.result = this.result.slice(0, -1);
     }
+    //adds the num and updates the total
     this.result += num;
     this.calculateResult();
   }
 
   addOperation(op:string){
+    //add operation 
+    //if the prev char in result was an operation then it wont be added
     if(!isNaN(Number(this.result.slice(-1))) && this.result != ''){
       this.result+=op;
     }
     
   }
   clear(){
+    //clears the result and total
     this.result = '0';
     this.total = 'Error';
   }
   calculateResult() {
+    //gets the calculation
     try {
       this.total = eval(this.result);
     } catch {
