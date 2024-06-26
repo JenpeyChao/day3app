@@ -14,8 +14,8 @@ export class CalcComponent {
   addNumber(num:number){
     const lastChar = this.result.slice(-1);
 
-    // Replace '0' with the new number if the result starts with '0' and it's not followed by a number or a dot
-    if (this.result === '0' || (lastChar === '0' && isNaN(Number(this.result.slice(-2, -1))) )) {
+    // Replace '0' with the new number if the result starts with '0' and it's not followed by a number
+    if (this.result === '0' || (lastChar === '0' && isNaN(Number(this.result.slice(-2, -1))) ) ) {
       //removes the prev number 
       this.result = this.result.slice(0, -1);
     }
